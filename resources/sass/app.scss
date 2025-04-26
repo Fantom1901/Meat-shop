@@ -1,0 +1,209 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:ital,wght@0,700;1,700&family=Roboto+Condensed:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:ital,wght@0,700;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.bg_place {
+    background-color: #FFEFEF;
+}
+
+
+.navbar {
+    background-color: #FFFFFF;
+
+    .navbar-brand {
+        a {
+            font-family: "Krona One", system-ui;
+            font-weight: bolder;
+            font-size: 1.688rem; // Это значение можно оставить, если у вас базовый размер шрифта 16px
+        }
+    }
+
+    .number_phone {
+        font-size: 1.125rem; // Пример: 1.125rem = 18px
+        font-family: Roboto, serif;
+        font-weight: 500;
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 26px 0;
+
+    .num_footer {
+        font-family: Roboto, serif;
+        font-weight: 500;
+        color: #000000;
+        font-size: 1.6rem; // Примерно 25.6px
+    }
+
+    .parent-num {
+        padding: 26px 40px 0; // Заменено с 1.625rem и 4% на px
+    }
+
+    .menu {
+        padding: 14px 30px 0; // Заменено с 14px и 3% на px
+        line-height: 1.25rem; // Примерно 20px
+        font-size: 1.2rem; // Примерно 19.2px
+
+        .adres {
+            line-height: 1.4375rem; // Примерно 23px
+        }
+    }
+
+    .schedule {
+        padding: 13px 30px 0; // Заменено с 13px и 3% на px
+        line-height: 1.4375rem; // Примерно 23px
+        font-size: 1.2rem; // Примерно 19.2px
+    }
+
+    .ico {
+        padding: 22px 20px 0;
+
+        .img {
+            width: 2.3rem; // Примерно 36.8px
+            height: auto;
+        }
+    }
+}
+
+.hello {
+    .hello_bg {
+        background-color: #FEE4E4;
+    }
+
+    .hello_text {
+        .meat_opt {
+            font-family: Roboto;
+            font-size: 2rem; // Примерно 32px
+            font-weight: 800;
+            color: #343434;
+        }
+
+        .about {
+            font-family: Roboto;
+            font-size: 1rem; // Примерно 16px
+            font-weight: 800;
+            color: #343434;
+        }
+    }
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) { /* Плоские экраны и мобильные устройства */
+    .navbar {
+        .navbar-brand {
+            a {
+                font-size: 1.5rem; // Уменьшаем размер шрифта для мобильных
+            }
+        }
+
+        .number_phone {
+            font-size: 1rem; // Уменьшаем размер шрифта номера телефона
+        }
+    }
+
+    footer {
+        padding: 20px 0; // Уменьшаем отступы
+
+        .num_footer {
+            font-size: 1.4rem; // Уменьшаем размер шрифта
+        }
+
+        .parent-num {
+            padding: 16px 20px 0; // Уменьшаем отступы
+        }
+
+        .menu,
+        .schedule {
+            padding: 10px 20px 0; // Уменьшаем отступы
+            font-size: 1rem; // Уменьшаем размер шрифта
+        }
+
+        .ico {
+            padding: 15px; // Уменьшаем отступы
+
+            .img {
+                width: 2rem; // Этот размер не меняем, так как это не шрифт
+                height: auto;
+            }
+        }
+    }
+
+    .hello {
+        .hello_text {
+            .meat_opt {
+                font-size: 1.75rem; // Уменьшаем размер шрифта
+            }
+
+            .about {
+                font-size: 0.875rem; // Уменьшаем размер шрифта
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) { /* Очень маленькие экраны, такие как мобильные телефоны */
+    .navbar {
+        .navbar-brand {
+            a {
+                font-size: 1.2rem; // Еще больше уменьшаем размер шрифта
+            }
+        }
+
+        .number_phone {
+            font-size: 0.875rem; // Еще меньше размер шрифта номера телефона
+        }
+    }
+
+    footer {
+        padding: 15px 0; // Уменьшаем отступы
+
+        .num_footer {
+            font-size: 1.2rem; // Уменьшаем размер шрифта
+        }
+
+        .parent-num {
+            padding: 10px 20px 0; // Уменьшаем отступы
+        }
+
+        .menu,
+        .schedule {
+            padding: 8px 10px 0; // Уменьшаем отступы
+            font-size: 1rem; // Уменьшаем размер шрифта
+        }
+
+        .ico {
+            padding: 10px; // Уменьшаем отступы
+            .img {
+                width: 1.8rem; // Этот размер не меняем, так как это не шрифт
+                height: auto;
+            }
+        }
+    }
+
+    .hello {
+        .hello_text {
+            .meat_opt {
+                font-size: 0.8rem; // Уменьшаем размер шрифта
+                .margin-bottom: 10px;
+            }
+
+            .about {
+                font-size: 0.45rem; // Уменьшаем размер шрифта
+            }
+            .btn-light {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+
+
+
