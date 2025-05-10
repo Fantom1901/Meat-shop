@@ -44,6 +44,5 @@ class MoonShineServiceProvider extends ServiceProvider
         ;
     }
     public function me(): void{
-
     }
 }
